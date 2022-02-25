@@ -68,8 +68,8 @@ def train_CMAC(data, overlap):
                 weights[idx] = weights[idx] + percent * correction
                 for k in range(overlap - 1):
                     weights[idx + k + 1] = weights[idx + k + 1] + correction
-                weights[idx+overlap] = weights[idx
-                                               + overlap]+(1-percent)*correction
+                weights[idx+overlap] = weights[idx + overlap] + \
+                    (1 - percent) * correction
 
             else:
                 error = data[1][j] - output
